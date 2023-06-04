@@ -98,10 +98,46 @@ p:hover {
 
 
 @media (max-width: 768px) {
-  /* Küçük ekranlar için stil tanımlamaları buraya */
-  button,
-  input,
-  p {
-    width: 100%;
+  body{
+    max-width:600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+
+    align-items: center;
+  }
+
+  main{
+    max-width:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+  }
+  p{
+    width: 500px;
+    height: 60px;
+  }
+
+  .add{
+    width: 400px;
+    margin: 10%;
+  }
+  .add button{
+    width: 30%;
+    height: 60px;
+  }
+  .add input{
+    height: 60px;
+    width: 110%;
+  }
+  .todos{
+    max-width: 450px;
+  }
+  .delete button{
+    width: 50vh;
   }
 }
