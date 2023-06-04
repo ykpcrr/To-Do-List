@@ -70,11 +70,7 @@ input {
 }
 
 .add button {
-  width: 20vh;
-}
-
-.add hr {
-  display: block;
+  width: 25vh;
 }
 
 p {
@@ -97,4 +93,15 @@ p {
 
 p:hover {
   cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+  /* Küçük ekranlar için stil tanımlamaları buraya */
+  button,
+  input,
+  p {
+    width: 100%;
+  }
 }
