@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.5s all ease-in-out
 }
 
 body {
@@ -9,6 +10,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  overflow: hidden;
 }
 
 button {
@@ -95,21 +98,35 @@ p:hover {
   cursor: pointer;
 }
 
-
-
 @media (max-width: 768px) {
-  body{
-    max-width:600px;
+  body {
+    height: 100%;
+    max-width: 600px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
     justify-content: center;
-
     align-items: center;
   }
 
-  main{
-    max-width:600px;
+  header{
+    width: max-content;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+  }
+
+  main {
+    height: 80%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,27 +134,92 @@ p:hover {
 
     font-size: 20px;
   }
-  p{
-    width: 500px;
+  p {
+    width: 400px;
     height: 60px;
   }
 
-  .add{
-    width: 400px;
+  .add {
+    width: 300px;
     margin: 10%;
   }
-  .add button{
+  .add button {
     width: 30%;
     height: 60px;
   }
-  .add input{
+  .add input {
     height: 60px;
     width: 110%;
   }
-  .todos{
+  .todos {
     max-width: 450px;
   }
-  .delete button{
+  .delete button {
     width: 50vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    height: 100%;
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header{
+    width: max-content;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  main {
+    height: 80%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 10px;
+  }
+  p {
+    width: 200px;
+    height: 30px;
+  }
+
+  .add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 5%;
+  }
+  .add button {
+    width: 50%;
+    height: 20px;
+  }
+  .add input {
+    height: 30px;
+    width: 25vh;
+  }
+  .todos {
+    max-width: 250px;
+  }
+  .delete button {
+    width: 25vh;
   }
 }
