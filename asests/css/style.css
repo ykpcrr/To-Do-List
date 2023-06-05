@@ -100,18 +100,19 @@ p:hover {
 
 @media (max-width: 768px) {
   body {
-    height: 100%;
-    max-width: 600px;
+    height: 100vh;
+    max-width: 768px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px;
   }
 
   header{
     width: max-content;
-    height: 20%;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,8 +126,9 @@ p:hover {
   }
 
   main {
-    height: 80%;
-    max-width: 600px;
+    height: 80vh;
+    max-width: 768px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,6 +160,85 @@ p:hover {
     width: 50vh;
   }
 }
+
+
+@media screen and (max-width: 550px) {
+  body {
+    height: 100vh;
+    max-width: 550px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  main {
+    height: 70vh;
+    max-width: 550px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+  }
+  p {
+    width: 50vw;
+    height: 40px;
+  }
+
+  .add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 7%;
+  }
+  .add button {
+    width: 50%;
+    height: 30px;
+  }
+  .add input {
+    height: 40px;
+    width: 50vw;
+  }
+  .todos {
+    max-width: 450px;
+  }
+  .delete button {
+    width: 25vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 480px) {
   body {
