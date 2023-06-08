@@ -17,6 +17,19 @@ btn.addEventListener("click", () => {
   }
 });
 
+input.addEventListener("keyup", e => {
+  const filterValue = e.target.value.toLowerCase().trim();
+  const todoList = document.querySelectorAll("p");
+
+  todoList.forEach(function (todo) {
+    if (todo.textContent.toLowerCase().trim().includes(filterValue)) {
+      todo.setAttribute("style", "display: block");
+    } else {
+      todo.setAttribute("style", "display : none");
+    }
+  });
+});
+
 let tododelete = document.querySelector("#delete");
 
 tododelete.addEventListener("click", () => {
